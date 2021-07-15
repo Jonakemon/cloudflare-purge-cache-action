@@ -24,7 +24,7 @@ jobs:
     steps:
     # Put other steps here if you'd like, i.e. to build your site, deploy it to a service, etc.
     - name: Purge cache
-      uses: Jonakemon/purge-cache-cloudflare-zone
+      uses: Jonakemon/purge-cache-cloudflare-zone@v1.1.0
       with:
         cloudflareZone: ${{ secrets.CLOUDFLARE_ZONE }}
         cloudflareApiKey: ${{ secrets.CLOUDFLARE_API_KEY }}
